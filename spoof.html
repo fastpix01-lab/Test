@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spoof Test Site</title>
+  <title>Spoof Test Site - Video Player</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,6 +19,14 @@
       color: #666;
       font-size: 18px;
     }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
     .warning {
       color: red;
       font-weight: bold;
@@ -27,10 +35,18 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to Spoof Test Page</h1>
-  <p>This is a simulated page for security testing (e.g., Referer spoofing, CSRF, etc.).</p>
+  <h1>Welcome to the Spoof Test Page</h1>
+  <p>Below is a FastPix player embedded via iframe for testing purposes.</p>
+
+  <!-- FastPix Player via iframe -->
+  <iframe 
+    src="https://play.fastpix.io/?playbackId=09a2dc71-8d3c-415c-985b-b6df4ebd5228&autoplay=true&muted=true"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+
   <div class="warning">
-    ⚠️ Do not use this in production. This is for test/demo purposes only.
+    ⚠️ This is a test environment. Playback restrictions may apply.
   </div>
 </body>
 </html>
